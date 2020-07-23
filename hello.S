@@ -13,6 +13,8 @@ _start:
 	lea r0, hello_world
 	bl  uart_puts
 
+        bl main
+ 
 	b led_flash
 
 hello_world:	.asciz "Hello, world!\r\n"
